@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CookieWater Shop</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CookieWater — Art Shop</title>
+
+  <!-- Load Payhip embed script ONCE -->
+  <script type="text/javascript" src="https://payhip.com/embed-page.js?v=24u68984"></script>
+
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; text-align: center; }
-    h1 { color: #333; }
-    p { color: #666; }
+    :root { --bg:#fafafa; --card:#fff; --text:#222; --muted:#777; }
+    body { font-family: system-ui, Arial, sans-serif; margin:0; background:var(--bg); color:var(--text); }
+    header { text-align:center; padding:32px 16px 8px; }
+    header h1 { margin:0 0 8px; font-size: clamp(1.6rem, 2.5vw, 2.2rem); }
+    header p { margin:0 0 24px; color:var(--muted); }
+    .grid { display:grid; gap:24px; padding:0 16px 48px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width:1120px; margin:0 auto; }
+    .card { background:var(--card); border-radius:16px; padding:16px; box-shadow:0 8px 28px rgba(0,0,0,.06); }
+    /* Give each embed some minimum space so it doesn’t collapse while loading */
+    .payhip-embed-page { min-height: 420px; }
+    footer { text-align:center; color:var(--muted); padding:24px 0 40px; }
   </style>
 </head>
 <body>
-  <h1>Welcome to CookieWater Shop!</h1>
-  <p>This is a simple website hosted on GitHub Pages.</p>
-  <p>Stay tuned for delicious updates.</p>
+  <header>
+    <h1>CookieWater — Original Art</h1>
+    <p>Secure checkout powered by Payhip</p>
+  </header>
+
+  <main class="grid">
+    <div class="card"><div class="payhip-embed-page" data-key="mT9Pq"></div></div>
+    <div class="card"><div class="payhip-embed-page" data-key="sIbf3"></div></div>
+    <div class="card"><div class="payhip-embed-page" data-key="O7igZ"></div></div>
+    <div class="card"><div class="payhip-embed-page" data-key="OJY3p"></div></div>
+    <div class="card"><div class="payhip-embed-page" data-key="bdJzG"></div></div>
+    <div class="card"><div class="payhip-embed-page" data-key="bvWFd"></div></div>
+    <div class="card"><div class="payhip-embed-page" data-key="KRxse"></div></div>
+  </main>
+
+  <footer>© CookieWater</footer>
 </body>
 </html>
